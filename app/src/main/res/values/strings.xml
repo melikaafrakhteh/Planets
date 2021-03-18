@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Planets</string>
+    <string name="text_homepage">Solar System Plenets</string>
+
+    //resource: https://solarsystem.nasa.gov/planets/
+
+    <string name="text_mercury">Mercury</string>
+    <string name="desc_mercury">
+        The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth s Moon.
+        From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system,that title belongs to nearby Venus, thanks to its dense atmosphere.
+    </string>
+
+
+    <string name="text_venus">Venus</string>
+    <string name="desc_venus">
+        Similar in size and structure to Earth, Venus has been called Earth s twin. These are not identical twins, however, there are radical differences between the two worlds.
+        Venus has a thick, toxic atmosphere filled with carbon dioxide and it is perpetually shrouded in thick, yellowish clouds of mostly sulfuric acid that trap heat, causing a runaway greenhouse effect. It’s the hottest planet in our solar system, even though Mercury is closer to the Sun. Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure you would encounter a mile below the ocean on Earth.
+    </string>
+
+
+    <string name="text_earth">Earth</string>
+    <string name="desc_earth">
+        Our home planet is the third planet from the Sun, and the only place we know of so far that is inhabited by living things.
+        While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.
+    </string>
+
+
+    <string name="text_mars">Mars</string>
+    <string name="desc_mars">
+        Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.
+    </string>
+
+
+    <string name="text_jupiter">Jupiter</string>
+    <string name="desc_jupiter">
+        Jupiter has a long history surprising scientists—all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.
+        Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined.
+    </string>
+
+
+    <string name="text_saturn">Saturn</string>
+    <string name="desc_saturn">
+       Saturn is the sixth planet from the Sun and the second largest planet in our solar system.
+        Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings—made of chunks of ice and rock—but none are as spectacular or as complicated as Saturn s.
+    </string>
+
+    <string name="text_uranus">Uranus</string>
+    <string name="desc_uranus">
+        The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.
+    </string>
+
+    <string name="text_neptune">Neptune</string>
+    <string name="desc_neptune">
+        Dark, cold and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.
+        More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846
+    </string>
+
+    <string name="text_pluto">Pluto</string>
+    <string name="desc_pluto">
+        Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the largest member of the Kuiper Belt and the best known of a new class of worlds called dwarf planets.
+    </string>
+</resources>
