@@ -20,6 +20,8 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:src="@drawable/sky" />
 
         <ImageView

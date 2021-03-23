@@ -59,4 +59,6 @@
     <string name="desc_pluto">
         Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the largest member of the Kuiper Belt and the best known of a new class of worlds called dwarf planets.
     </string>
+    <string name="notify_txt">Hello, welcome to planet...</string>
+    <string name="welcome">welcome</string>
 </resources>

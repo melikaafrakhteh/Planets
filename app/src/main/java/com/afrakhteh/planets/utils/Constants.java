@@ -12,4 +12,12 @@ public class Constants {
     public static final String URANUS = "https://wallpapercave.com/wp/wp2540461.jpg";
     public static final String NEPTUNE = "https://wallpapercave.com/wp/wp5161867.jpg";
     public static final String PLUTO = "https://wallpapercave.com/wp/wp2387839.jpg";
+
+    //keys
+    public static final String SHAERD_KEY = "shared";
+    public static final String SHAERD_FIRST_KEY = "first";
+
+    public static final String CHANNEL_ID = "channel";
+    public static final String CHANNEL_NAME = "name";
+    public static final int NOTIFICATION_ID = 0;
 }
