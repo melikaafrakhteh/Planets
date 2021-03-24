@@ -2,9 +2,7 @@ package com.afrakhteh.planets.ui.home;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.afrakhteh.planets.R;
-import com.afrakhteh.planets.data.adapter.PlanetAdapter;
+import com.afrakhteh.planets.ui.adapter.PlanetAdapter;
 import com.afrakhteh.planets.data.model.PlanetModel;
 import com.afrakhteh.planets.data.saving.SharedPref;
 import com.afrakhteh.planets.utils.Constants;
@@ -70,7 +68,7 @@ public class HomeActivity extends AppCompatActivity {
 
         NotificationCompat.Builder notification = new NotificationCompat.Builder(HomeActivity.this,Constants.CHANNEL_ID)
                 .setSmallIcon(R.drawable.welcome)
-                .setContentTitle(getResources().getString(R.string.welcome))
+                .setContentTitle(getResources().getString(R.string.notify_title))
                 .setContentText(getResources().getString(R.string.notify_txt))
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 

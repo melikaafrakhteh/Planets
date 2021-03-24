@@ -1,6 +1,5 @@
-package com.afrakhteh.planets.data.adapter;
+package com.afrakhteh.planets.ui.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,6 @@ import com.afrakhteh.planets.R;
 import com.afrakhteh.planets.data.model.PlanetModel;
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;

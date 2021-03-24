@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Planets</string>
-    <string name="text_homepage">Solar System Plenets</string>
+    <string name="text_homepage">Solar System Planets</string>
 
     //resource: https://solarsystem.nasa.gov/planets/
 
@@ -59,6 +59,22 @@
     <string name="desc_pluto">
         Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the largest member of the Kuiper Belt and the best known of a new class of worlds called dwarf planets.
     </string>
-    <string name="notify_txt">Hello, welcome to planet...</string>
-    <string name="welcome">welcome</string>
+    <string name="notify_txt"> welcome to planets, Hope you enjoy</string>
+    <string name="notify_title">Hello</string>
+    <string name="intro_one">
+        There are many planetary systems like ours in the universe, with planets orbiting a host star. Our planetary system is named the "solar" system because our Sun is named Sol, after the Latin word for Sun, "solis," and anything related to the Sun we call "solar."
+    </string>
+    <string name="intro_two">
+        Our solar system consists of our star, the Sun, and everything bound to it by gravity — the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune, dwarf planets such as Pluto, dozens of moons and millions of asteroids, comets and meteoroids.
+    </string>
+    <string name="intro_three">
+        Beyond our own solar system, we have discovered thousands of planetary systems orbiting other stars in the Milky Way.
+    </string>
+    <string name="intro_for">
+        Earth is like your house. The Solar System is like your town. The Galaxy is like your country.
+    </string>
+    <string name="next_btn_txt">Next</string>
+    <string name="next_btn_txt_finish">Lets Start</string>
+    <string name="back_btn_txt">Back</string>
+
 </resources>
