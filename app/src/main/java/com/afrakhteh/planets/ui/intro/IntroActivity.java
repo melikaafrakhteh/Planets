@@ -1,8 +1,5 @@
 package com.afrakhteh.planets.ui.intro;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -10,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.afrakhteh.planets.R;
 import com.afrakhteh.planets.ui.adapter.SliderAdapter;
@@ -34,22 +34,25 @@ public class IntroActivity extends AppCompatActivity {
     @BindView(R.id.backbtn)
     Button back;
 
-    @OnClick(R.id.backbtn) void backButton(){
-      if (current>=0){
-          viewPager.setCurrentItem(current - 1);
-      }
+    @OnClick(R.id.backbtn)
+    void backButton() {
+        if (current >= 0) {
+            viewPager.setCurrentItem(current - 1);
+        }
 
     }
-    @OnClick(R.id.nextbtn)void nextButton(){
-        if (current + 1< dots.length){
+
+    @OnClick(R.id.nextbtn)
+    void nextButton() {
+        if (current + 1 < dots.length) {
             viewPager.setCurrentItem(current + 1);
-        }
-        else{
+        } else {
             lunchHomeActivity();
         }
 
     }
-    private void lunchHomeActivity(){
+
+    private void lunchHomeActivity() {
         Intent i = new Intent(IntroActivity.this, HomeActivity.class);
         startActivity(i);
         finish();
@@ -71,21 +74,23 @@ public class IntroActivity extends AppCompatActivity {
         addDotsIndicator(0);
         viewPager.addOnPageChangeListener(listener);
     }
-    public void addDotsIndicator(int position){
+
+    public void addDotsIndicator(int position) {
         dots = new TextView[4];
         linearLayout.removeAllViews();
-        for (int i = 0 ;i < dots.length ; i++){
+        for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226;"));
             dots[i].setTextColor(getResources().getColor(R.color.mainTexttransparent));
             dots[i].setTextSize(36);
             linearLayout.addView(dots[i]);
         }
-        if (dots.length>0){
+        if (dots.length > 0) {
             dots[position].setTextColor(getResources().getColor(R.color.mainText));
         }
     }
-    ViewPager.OnPageChangeListener listener = new ViewPager.OnPageChangeListener(){
+
+    ViewPager.OnPageChangeListener listener = new ViewPager.OnPageChangeListener() {
 
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -96,21 +101,19 @@ public class IntroActivity extends AppCompatActivity {
         public void onPageSelected(int position) {
             addDotsIndicator(position);
             current = position;
-            if(position == 0){
+            if (position == 0) {
                 next.setEnabled(true);
                 back.setEnabled(false);
                 back.setVisibility(View.INVISIBLE);
                 next.setText(getResources().getString(R.string.next_btn_txt));
                 back.setText("");
-            }
-            else if (position == dots.length -1){
+            } else if (position == dots.length - 1) {
                 next.setEnabled(true);
                 back.setEnabled(true);
                 back.setVisibility(View.VISIBLE);
                 next.setText(getResources().getString(R.string.next_btn_txt_finish));
                 back.setText(getResources().getString(R.string.back_btn_txt));
-            }
-            else {
+            } else {
                 next.setEnabled(true);
                 back.setEnabled(true);
                 back.setVisibility(View.VISIBLE);

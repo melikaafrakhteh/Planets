@@ -16,6 +16,10 @@ public class Constants {
     //keys
     public static final String SHAERD_KEY = "shared";
     public static final String SHAERD_FIRST_KEY = "first";
+    public static final String IMAGE = "img";
+    public static final String NAME = "name";
+    public static final String DESCRIPTION = "desc";
+
 
     public static final String CHANNEL_ID = "channel";
     public static final String CHANNEL_NAME = "name";

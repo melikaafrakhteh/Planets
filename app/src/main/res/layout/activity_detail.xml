@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity"
+    app:layoutDescription="@xml/motion">
+
+    <ImageView
+        android:id="@+id/imageView_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/intro" />
+
+    <LinearLayout
+        android:id="@+id/linear_detail_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linear_detail_desc"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_detail"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="casual"
+            android:padding="3dp"
+            android:textColor="@color/mainText"
+            android:textSize="28sp"
+            tools:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_detail_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/desc_detail"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/secondText"
+            android:textSize="22sp"
+            tools:text="TextViewbcjsckscnsncsmcnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndwdijwodwlmdwlcwkc cknwjcwuduwdy" />
+
+    </LinearLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

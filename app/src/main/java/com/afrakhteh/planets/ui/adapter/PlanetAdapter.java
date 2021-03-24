@@ -1,6 +1,7 @@
 package com.afrakhteh.planets.ui.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,14 +14,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.afrakhteh.planets.R;
 import com.afrakhteh.planets.data.model.PlanetModel;
+import com.afrakhteh.planets.ui.detail.DetailActivity;
+import com.afrakhteh.planets.utils.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder>{
+public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder> {
     Context context;
     List<PlanetModel> planetModels;
 
@@ -32,7 +36,7 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_show,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_show, parent, false);
         return new ViewHolder(view);
     }
 
@@ -42,11 +46,13 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder
 
         holder.text.setText(model.getName());
         Picasso.get().load(model.getImage()).into(holder.image);
-        holder.click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
+        holder.image.setOnClickListener(v -> {
+            Intent i = new Intent(PlanetAdapter.this.context, DetailActivity.class);
+            i.putExtra(Constants.IMAGE, model.getImage());
+            i.putExtra(Constants.NAME, model.getName());
+            i.putExtra(Constants.DESCRIPTION, model.getDescription());
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(i);
         });
 
     }
@@ -57,20 +63,19 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.ViewHolder
     }
 
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.rlay_planet_click_item)
-         RelativeLayout click;
 
         @BindView(R.id.img_planet_image_item)
-         ImageView image;
+        ImageView image;
 
         @BindView(R.id.txt_planet_name_item)
         TextView text;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
+
     }
 }
